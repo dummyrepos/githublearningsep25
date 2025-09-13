@@ -29,5 +29,6 @@ jobs:
         steps:
             - name: print vars
               run: echo 'group = ${{ vars.GROUP_NAME }}  user = ${{ vars.USERNAME }} token = ${{ secrets.TOKEN  }}'
+            - run: printenv
           
           
