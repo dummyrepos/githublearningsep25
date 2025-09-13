@@ -11,9 +11,9 @@ jobs:
         steps:
           - run: "echo Repo: ${{ github.repository }} by ${{  github.actor }}"
           - name: Show complete github context
-            run: "echo ${{  toJson(github) }}"
+            run: echo '${{  toJson(github) }}'
           - name: Show complete env context
-            run: "echo ${{  toJson(env) }}"
+            run: echo '${{  toJson(env) }}'
           - name: Show complete runner context
-            run: "echo ${{  toJson(runner) }}"
+            run: echo '${{  toJson(runner) }}'
           
