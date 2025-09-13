@@ -13,7 +13,7 @@ jobs:
         steps:
             - id: step1
               name: step 1
-              run: echo tip='HOW ARE YOU?' >> $GITHUB_OUTPUT
+              run: echo "tip=hello" >> $GITHUB_OUTPUT
             - name: step 2
               run: "output from step1 is ${{ steps.step1.outputs.tip }}"
     job2:
